@@ -1,0 +1,234 @@
+/* Note there a few "reset" styles given in reset.css. You may opt to remove those if you wish. */
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(162deg, rgba(255,255,255,1) 6%, rgba(214,199,146,1) 53%, rgba(248,250,219,1) 100%, rgba(235,219,160,1) 100%);
+    margin: 0;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topbar {
+    display: flex;
+    background-color: rgb(241, 225, 201);
+}
+.logo {
+    font-size: 2em;
+    color: rgb(134, 97, 67);
+    flex: 1;
+    font-family: 'Sacramento', cursive;
+    padding-left: 2em;
+    align-content: center;
+    margin: 0;
+}
+.img-top{
+    width: 100%;
+    height: auto;
+}
+.material-icons {
+    padding: 0.3em;
+    color: rgb(134, 97, 67);
+}
+.form-search {
+    margin-top: 0.5em;
+}
+.search-bar {
+    color: rgb(134, 97, 67);
+    font-size: 1.5em;
+    font-family: 'Sacramento', cursive;
+    padding-left: 2em;
+}
+
+.categories {
+    display: flex;
+    align-items: stretch;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255,255,255);
+    background: linear-gradient(162deg, rgba(255,255,255,1) 6%, rgba(231,231,168,1) 51%, rgba(248,250,219,1) 89%);
+    padding: 0.5em;
+    width: 150px;
+    height: 70px;
+    border-radius: 0.5em;
+    list-style: none;
+    font-size: 1em;
+    font-family: 'Sacramento', cursive;
+    margin: 0.5em;
+}
+
+.form-filters {
+    font-family: 'Sacramento', cursive;
+    font-size: 1em;
+}
+
+.filter-title {
+    font-family: 'Sacramento', cursive;
+    color: rgb(134, 97, 67);
+    font-size: 1.5em;
+    padding-left: 6em;
+    margin: 0.5em;
+}
+.filter-show {
+    box-sizing: border-box;
+    width: 20px;
+    height: auto;
+    background-color: rgb(241, 225, 201);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+.filter-color{
+    background-color: rgb(241, 225, 201);
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+.filter-colorlist {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-sizes {
+    background-color:rgb(241, 225, 201);
+    box-sizing: border-box;
+    width: 100px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+.filter-sizeslist {
+    list-style: none;
+    padding: 0;
+}
+.Ratings {
+    background-color: rgb(241, 225, 201);
+    box-sizing: border-box;
+    width: 80%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1em;
+    list-style: none;
+    margin-left: 1em;
+}
+.filter-rating {
+    list-style: none;
+    padding: 0;
+}
+
+.stories {
+    display: flex;
+    align-items: stretch;
+}
+
+.story {
+    background-color:   rgb(255, 255, 255);
+    /* display: flex;
+    flex-direction: column; */
+    width:169px;
+    height: 300px;
+    padding: 0.5em;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    border-radius: 1em;
+	box-shadow: 1px 1px 2px #ccc;
+	margin: 1em;
+}
+.img-soap {
+    display: flex;
+    width: 100px;
+    height: auto;
+   margin-left: 1em;
+}
+.product-name {
+    margin: 0;
+   text-align: center;
+    color: rgb(134, 97, 67);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+.description {
+    font-size: 0.4em;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+.story-label {
+   font-size: 0.5em;
+   
+}
+.price {
+    padding-left: 3em;
+    margin: 0;
+}
+.story-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+.story-size {
+    font-size: 0.5em;
+    list-style: none;
+    padding: 0;
+}
+.rating-title {
+    font-size: 1.2em;
+}
+
+.seemore {
+    border-radius: 0.5em;
+    background-color:rgb(134, 97, 67);
+    color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	line-height: 2;
+	transition: background-color 0.2s;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    }
+
+
+.footer {
+    background-color: rgb(241, 225, 201);
+    display: flex;
+    align-content: flex-end;
+}
+.team-title {
+
+    font-size: 0.5em;
+}
+.footer-team{
+    padding-right: 2em;
+}
+.teams {
+    list-style: none;
+    font-size: 1em;
+    font-family: 'Sacramento', cursive;
+}
+.footer-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em 0 0;
+}

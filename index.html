@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Document title]</title>
+    <meta name="description" content="[A short description of this site for SEO]">
+    <meta name="author" content="[Your Name]">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Remember to update the values in [square braces] above -->
+  </head>
+
+  <body>
+    <header>
+    <div class="topbar"> 
+      <span class="material-icons">dehaze</span>
+      <span class="material-icons">search</span>
+      <h1 class="logo">Savon</h1>
+      <a href="#"><span class="material-icons">favorite_border</span></a>
+      <a href="#"><span class="material-icons">shopping_cart</span></a>
+      <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    </div> 
+
+  
+      <!-- Site logo, replace with your own -->
+      <a href="index.html"><img class="img-top" src="https://images.unsplash.com/photo-1542038374755-a93543c5178f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=60" alt="HTML Logo (replace this!)"></a>
+      <form class="form-search">
+        <label class="search-bar">Search
+        <input type="search" name="find" id="find">
+        </label>
+        <button type="button"><span class="material-icons">search</span></button>
+      </form>
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <div class="categories">
+          <p class="category"><a href="#">Bar Soap</a></p>
+          <p class="category"><a href="#">Shampoo bar</a></p>
+          <p class="category"><a href="#">Body lotion bar</a></p>
+          <p class="category"><a href="#">Massage bar</a></p>
+      </div>
+    </header>
+      <!-- Search for a product (non-functional) -->
+      
+      <!-- Additional nav links -->
+
+     
+    
+
+    <main>
+      <!-- Filtering product form -->
+        <form class="form-filters">
+          <h2 class="filter-title">Filters</h2>
+          <fieldset class="filter-show">
+            <label for="sort">Show</label>
+            <select name="sort" id="sort">
+              <option value="a">NEW</option>
+              <option value="b">Best Seller</option>
+              <option value="c">Limited</option>
+            </select>
+          </fieldset>
+          <fieldset class=filter-color>
+            <legend>Scent</legend>
+            <ul class="filter-colorlist">
+              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Floral</label></li>
+              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">Citrusy</label></li>
+              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Herbal</label></li>
+              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Sweet</label></li>
+              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Fresh</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-sizes">
+            <legend>Sizes</legend>
+            <ul class="filter-sizeslist">
+              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
+              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
+              <li><input type="checkbox"s name="size" value="md" id="md"> <label for="md">M</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="Ratings" >
+            <legend>Ratings</legend>
+            <ol class="filter-rating">
+              <li>
+                <input type="radio" name="rating" value="4" id="aboveFour">
+                <label for="aboveFour">
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="3" id="aboveThree">
+                <label for="aboveThree">
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="2" id="aboveTwo">
+                <label for="aboveTwo">
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="1" id="aboveOne">
+                <label for="aboveOne">
+                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                </label>
+              </li>
+            </ol>
+          </fieldset>
+        </form>
+
+      <section>
+        <!-- <h2 class="results">Results</h2> -->
+
+        <!-- Product 1 -->
+        <div class="stories">
+        <article class="story">
+          <header class="soap">
+            <img class="img-soap" src="https://www.lush.ca/dw/image/v2/BDMQ_PRD/on/demandware.static/-/Sites-lushcosmetics-export/default/dw2268bd4a/images/product/00075.jpg?sw=400&sh=400" alt="Product Image">
+          </header>
+          <h3 class="product-name">BOHEMIAN</h3>
+          <p class="description">Mind-cleansing lemony lather.</p>
+          <p class="price">$10</p>
+          <form class="story-product">
+             <label class="story-label"><input type="radio" name="colour" value="r">Citrusy</label>
+          <ul class="story-size">
+                <li><label><input type="radio" name="size" value="m"> XS</label></li>
+                <li><lasbel><input type="radio" name="size" value="l"> S</label></li>
+                <li><label><input type="radio" name="size" value="xl"> M</label></li>
+          </ul>
+          <span class="material-icons">add_shopping_cart</span> <span class="material-icons">favorite</span>
+          </form>
+              <a class="seemore" href="s#">see more</a>
+           </article>
+        
+
+        <!-- Product 2 -->
+        <article class="story">
+          <header class="soap">
+            <img class="img-soap" src="https://www.lush.ca/dw/image/v2/BDMQ_PRD/on/demandware.static/-/Sites-lushcosmetics-export/default/dw10a35d99/images/product/00843.jpg?sw=400&sh=400" alt="Product Image">
+          </header>
+          <h3 class="product-name">ROCK STAR</h3>
+          <p class="description">Keep it on regular rotation!</p>
+          <p class="price">$10</p>
+          <form class="story-product">
+            <label class="story-label"><input type="radio" name="colour" value="r">Sweet</label>
+         <ul class="story-size">
+               <li><label><input type="radio" name="size" value="m"> XS</label></li>
+               <li><lasbel><input type="radio" name="size" value="l"> S</label></li>
+               <li><label><input type="radio" name="size" value="xl"> M</label></li>
+         </ul>
+         <span class="material-icons">add_shopping_cart</span> <span class="material-icons">favorite</span>
+         </form>
+             <a class="seemore" href="s#">see more</a>
+        </article>
+        </div>
+        <!-- Product 3 -->
+        <div class="stories">
+        <article class="story">
+          <header class="soap">
+            <img class="img-soap" src="https://www.lush.ca/dw/image/v2/BDMQ_PRD/on/demandware.static/-/Sites-lushcosmetics-export/default/dw81f12a5e/images/product/00609.jpg?sw=400&sh=400" alt="Product Image">
+          </header>
+          <h3 class="product-name">SULTANA SOAP</h3>
+          <p  class="description">Lusciously rich and velvety.</p>
+          <p class="price">$10</p>
+          <form class="story-product">
+            <label class="story-label"><input type="radio" name="colour" value="r">Sweet</label>
+         <ul class="story-size">
+               <li><label><input type="radio" name="size" value="m"> XS</label></li>
+               <li><lasbel><input type="radio" name="size" value="l"> S</label></li>
+               <li><label><input type="radio" name="size" value="xl"> M</label></li>
+         </ul>
+         <span class="material-icons">add_shopping_cart</span> <span class="material-icons">favorite</span>
+         </form>
+             <a class="seemore" href="s#">see more</a>
+        </article>
+  
+        <!-- Product 4 -->
+        <article class="story">
+          <header class="soap">
+            <img class="img-soap" src="https://www.lush.ca/dw/image/v2/BDMQ_PRD/on/demandware.static/-/Sites-lushcosmetics-export/default/dw806929c5/images/product/00079.jpg?sw=400&sh=400" alt="Product Image">
+          </header>
+          <h3 class="product-name">OCEAN BLUE</h3>
+          <p class="description">Happy smooth skin ahoy!</p>
+          <p class="price">$10</p>
+          <form class="story-product">
+              <label class="story-label"><input type="radio" name="colour" value="r">Sweet</label>
+           <ul class="story-size">
+                 <li><label><input type="radio" name="size" value="m"> XS</label></li>
+                 <li><lasbel><input type="radio" name="size" value="l"> S</label></li>
+                 <li><label><input type="radio" name="size" value="xl"> M</label></li>
+           </ul>
+           <span class="material-icons">add_shopping_cart</span> <span class="material-icons">favorite</span>
+           </form>
+               <a class="seemore" href="s#">see more</a>
+          </article>
+         
+        </article>
+      </div>
+      <div class="stories">
+
+        <!-- Product 5 -->
+        <article class="story">
+          <header class="soap">
+            <img class="img-soap" src="https://www.lush.ca/dw/image/v2/BDMQ_PRD/on/demandware.static/-/Sites-lushcosmetics-export/default/dw6b9ef163/images/product/06065.jpg?sw=400&sh=400" alt="Product Image">
+          </header>
+          <h3 class="product-name">OLIVE TREE</h3>
+          <p class="description">Mediterranean herbal flavor.</p>
+          <p class="price">$10</p>
+          <form class="story-product">
+            <label class="story-label"><input type="radio" name="colour" value="r">Sweet</label>
+         <ul class="story-size">
+               <li><label><input type="radio" name="size" value="m"> XS</label></li>
+               <li><lasbel><input type="radio" name="size" value="l"> S</label></li>
+               <li><label><input type="radio" name="size" value="xl"> M</label></li>
+         </ul>
+         <span class="material-icons">add_shopping_cart</span> <span class="material-icons">favorite</span>
+         </form>
+             <a class="seemore" href="s#">see more</a>
+        </article>
+        <!-- Product6 -->
+        <article class="story">
+          <header class="soap">
+            <img class="img-soap" src="https://www.lush.ca/dw/image/v2/BDMQ_PRD/on/demandware.static/-/Sites-lushcosmetics-export/default/dw02c367b1/images/product/09696.jpg?sw=800&sh=800" alt="Product Image">
+          </header>
+          <h3 class="product-name">SLEEPY ZZZ</h3>
+          <p class="description">After shower, get some zzz.</p>
+          <p class="price">$10</p>
+          <form class="story-product">
+            <label class="story-label"><input type="radio" name="colour" value="r">Sweet</label>
+         <ul class="story-size">
+               <li><label><input type="radio" name="size" value="m"> XS</label></li>
+               <li><lasbel><input type="radio" name="size" value="l"> S</label></li>
+               <li><label><input type="radio" name="size" value="xl"> M</label></li>
+         </ul>
+         <span class="material-icons">add_shopping_cart</span> <span class="material-icons">favorite</span>
+         </form>
+             <a class="seemore" href="s#">see more</a>
+        </article>
+          
+      </section>  
+      
+    </div>
+    </main>
+    
+    <div class="footer">
+      <p class="team-title">&copy; Copyright, 1991.</p>
+      <nav class="footer-team" aria-label="Legal">
+        <ul class="teams">
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility Policy</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-icons">
+        <li><span class="material-icons">face</span></li>
+        <li><span class="material-icons">camera_alt</span></li>
+        <li><span class="material-icons">alternate_email</span></li>
+      </ul>
+    </footer>
+  </div>
+
+  </body>
+</html>
