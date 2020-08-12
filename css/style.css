@@ -16,8 +16,7 @@ p {
     color: rgb(134, 97, 67);
     flex: 1;
     font-family: 'Sacramento', cursive;
-    padding-left: 2em;
-    align-content: center;
+    text-align: center;
     margin: 0;
 }
 .img-top{
@@ -30,6 +29,7 @@ p {
 }
 .form-search {
     margin-top: 0.5em;
+    align-items: center;
 }
 .search-bar {
     color: rgb(134, 97, 67);
@@ -51,8 +51,8 @@ p {
     background: rgb(255,255,255);
     background: linear-gradient(162deg, rgba(255,255,255,1) 6%, rgba(231,231,168,1) 51%, rgba(248,250,219,1) 89%);
     padding: 0.5em;
-    width: 150px;
-    height: 70px;
+    width: 100%;
+    height: auto;
     border-radius: 0.5em;
     list-style: none;
     font-size: 1em;
@@ -62,26 +62,30 @@ p {
 
 .form-filters {
     font-family: 'Sacramento', cursive;
+    display: block;
     font-size: 1em;
+    width: 100%;
+    height: auto;
 }
 
 .filter-title {
     font-family: 'Sacramento', cursive;
+    text-align: center;
     color: rgb(134, 97, 67);
     font-size: 1.5em;
-    padding-left: 6em;
     margin: 0.5em;
 }
 .filter-show {
     box-sizing: border-box;
-    width: 20px;
+    width: 300px;
     height: auto;
+    align-items: center;
     background-color: rgb(241, 225, 201);
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 1em;
-    margin-left: 1em;
-    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    margin: 1em;
 }
+
 .filter-color{
     background-color: rgb(241, 225, 201);
     display: flex;
@@ -103,7 +107,7 @@ p {
 .filter-sizes {
     background-color:rgb(241, 225, 201);
     box-sizing: border-box;
-    width: 100px;
+    width: 300px;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 1em;
@@ -117,7 +121,7 @@ p {
 .Ratings {
     background-color: rgb(241, 225, 201);
     box-sizing: border-box;
-    width: 80%;
+    width: 300px;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 1em;
@@ -130,33 +134,36 @@ p {
 }
 
 .stories {
-    display: flex;
+    display: block;
     align-items: stretch;
+    margin-right: 2em;
 }
 
 .story {
     background-color:   rgb(255, 255, 255);
-    /* display: flex;
-    flex-direction: column; */
-    width:169px;
-    height: 300px;
+    display: block;
+    flex-direction: column;
+    width:100%;
+    height: auto;
     padding: 0.5em;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     border-radius: 1em;
 	box-shadow: 1px 1px 2px #ccc;
-	margin: 1em;
+    margin: 1em;
 }
+
 .img-soap {
-    display: flex;
+    display: block;
+    align-items: center;
     width: 100px;
     height: auto;
-   margin-left: 1em;
+    margin-left: 7em;
 }
 .product-name {
     margin: 0;
-   text-align: center;
+    text-align: center;
     color: rgb(134, 97, 67);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -172,15 +179,16 @@ p {
    
 }
 .price {
-    padding-left: 3em;
     margin: 0;
+    text-align: center;
 }
 .story-product {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0;
+    height: auto;
 }
 .story-size {
     font-size: 0.5em;
@@ -210,14 +218,15 @@ p {
 .footer {
     background-color: rgb(241, 225, 201);
     display: flex;
-    align-content: flex-end;
+    justify-content: space-around;
 }
 .team-title {
 
     font-size: 0.5em;
 }
 .footer-team{
-    padding-right: 2em;
+    display: flex;
+    align-items: center;
 }
 .teams {
     list-style: none;
@@ -228,7 +237,58 @@ p {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 0 1em 0 0;
+    padding: 0;
+}
+
+/* mobile(M) first */
+/* medium size */
+@media screen and (min-width: 600px) {
+    .search-bar {
+      padding-left: 6em;
+    }
+    .filter-show{
+       display: block; 
+       align-items: center;
+    }
+    .stories {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    .story {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .img-soap {
+     margin-left: 4em;
+
+    } 
+    .footer-team {
+        display: flex;
+       align-items: flex-end;
+    }
+
+}
+/* PC size */
+@media screen and (min-width: 900px) {
+    .img-soap {
+       margin-left: 9em;
+    }
+    .team-title {
+        font-display: flex;
+        align-items: flex-start;
+    }
+    .filter-title {
+        display: block;
+    }
+
+    .form-filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .search-bar {
+        padding-left: 15em;
+    }
 }
